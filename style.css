@@ -1,0 +1,196 @@
+
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #F5F7F6;
+    color: #263238;
+}
+
+/* Encabezado */
+header {
+    background-color: #176B50;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 5px solid #F2C94C;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+header p {
+    margin-bottom: 0;
+    color: #E5F2EB;
+}
+
+/* Contenido principal */
+main {
+    max-width: 950px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Secciones */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+section h2 {
+    color: #176B50;
+    font-size: 22px;
+    margin-top: 0;
+    border-bottom: 2px solid #F2C94C;
+    padding-bottom: 10px;
+}
+
+/* Formulario */
+form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+
+form input {
+    display: block;
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #CBD5D1;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #176B50;
+}
+
+/* Botón de registro */
+button {
+    background-color: #F2C94C;
+    color: #263238;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 20px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #E3B72F;
+}
+
+/* Mensajes de error */
+#mensajeError {
+    color: #C94242;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+/* Tabla de estudiantes */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #DCE5E0;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #E5F2EB;
+    color: #176B50;
+}
+
+tbody tr:hover {
+    background-color: #F1F7F3;
+}
+
+th:last-child, td:last-child {
+    text-align: center;
+}
+
+/* Colores de las notas */
+.nota-alta {
+    color: #176B50;
+    background-color: #E5F2EB;
+    font-weight: bold;
+}
+
+.nota-baja {
+    color: #C94242;
+    background-color: #FCECEC;
+    font-weight: bold;
+}
+
+/* Resumen de calificaciones */
+main section:last-child p {
+    background-color: #F5F7F6;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-left: 4px solid #F2C94C;
+    border-radius: 5px;
+}
+
+#mejorEstudiante,
+#notaMayor,
+#promedioNotas,
+#notaMinima {
+    font-weight: bold;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 600px) {
+    main {
+        margin: 20px auto;
+        padding: 0 12px;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+/* Colores del resumen de calificaciones */
+main section:last-child p:first-of-type {
+    border-left-color: #176B50;
+}
+
+main section:last-child p:last-of-type {
+    border-left-color: #C94242;
+    background-color: #FFF4F4;
+}
+
+#notaMayor {
+    color: #176B50;
+}
+
+#notaMinima {
+    color: #C94242;
+}

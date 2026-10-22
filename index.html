@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Académico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Registro Académico</h1>
+        <p>Sistema de registro y consulta de notas de estudiantes.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Registro de estudiantes</h2>
+
+            <form id="formEstudiantes" novalidate>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+
+                <label for="nota">Nota:</label>
+                <input type="number" id="nota" name="nota"
+                       min="0" max="100" step="any" required>
+
+                <button type="submit">Agregar estudiante</button>
+
+                <p id="mensajeError"></p>
+            </form>
+        </section>
+
+        <section>
+            <h2>Lista de estudiantes</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Nota</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tablaEstudiantes">
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Resumen de calificaciones</h2>
+
+            <p>
+                Mayor nota:
+                <span id="mejorEstudiante">María Mora Pérez</span>
+                (<span id="notaMayor">90</span>)
+            </p>
+
+            <p>
+                Promedio general:
+                <span id="promedioNotas">76</span>
+            </p>
+
+            <p>
+                Nota más baja:
+                <span id="notaMinima">60</span>
+            </p>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
